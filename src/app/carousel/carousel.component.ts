@@ -10,6 +10,9 @@ export class CarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('.carousel').carousel({
+      interval: 4000
+    });
   }
 
 }
