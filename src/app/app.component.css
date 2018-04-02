@@ -1,11 +1,14 @@
-.container{
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-right: 0;
+.containers{
+  margin: 30px;
 }
 .search{
 
 }
 .carousel-product{
   margin-left: 10px;
+}
+@media (min-width: 1403px){
+  .carousels{
+    margin-left: 90px;
+  }
 }

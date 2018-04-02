@@ -1,3 +1,4 @@
+///<reference path="../../../node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts"/>
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,12 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
-    $('.carousel').carousel({
-      interval: 4000
-    });
+    (<any>$('.carousel')).carousel({interval: 2500});
   }
 
 }
