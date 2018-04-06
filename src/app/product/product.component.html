@@ -1,3 +1,13 @@
-<p>
-  product works!
-</p>
+<div *ngFor="let item of productList" class="content">
+  <div style="border: 1px solid gray;padding: 5px;">
+    <img src="../../favicon.ico" alt="">
+    <div class="caption">
+      <h4 class="pull-right">{{item.price}}元</h4>
+      <h4><a>{{item.title}}</a></h4>
+      <p>{{item.desc}}</p>
+    </div>
+    <div>
+      <app-stars [rating]="item.rating"></app-stars>
+    </div>
+  </div>
+</div>
